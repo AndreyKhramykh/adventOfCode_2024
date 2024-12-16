@@ -18,12 +18,8 @@ function getResult(arg) {
 
 	function searchingWords(startLetter, i, j) {
 		let searchingWord = ''
-		if (startLetter == 'X') {
-			searchingWord = keyWord
-		}
-		if (startLetter == 'S') {
-			searchingWord = keyWord.split('').reverse().join('')
-		}
+		if (startLetter == 'X') searchingWord = keyWord
+		if (startLetter == 'S') searchingWord = keyWord.split('').reverse().join('')
 		let hitCounter = 0
 		for (let d = 0; d < directions.length; d++) {
 			let currentWord = ''
