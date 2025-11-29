@@ -38,6 +38,7 @@ function getResult(arg) {
 		}
 		return data
 	}
+	console.log(getData(arg).join(''));
 
 	console.log(
 		getCompressedData(getData(array)).reduce((acc, curr, index) => {
@@ -51,7 +52,7 @@ const fs = require('node:fs')
 const samplePath = 'sample.txt'
 const fullPath = 'full.txt'
 
-fs.readFile(fullPath, 'utf-8', (error, data) => {
+fs.readFile(samplePath, 'utf-8', (error, data) => {
 	if (error) {
 		console.log(`output->error`, error)
 	}
